@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Newsletter</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -22,7 +25,7 @@
         <section class="signup-form">
             <form action="index.html" method="post">
 
-                <fieldset>
+                <fieldset class="contact-fieldset">
                     <legend>Contact Information</legend>
 
                     <label for="name">Full Name</label>
@@ -40,9 +43,9 @@
                     <label for="city">City</label>
                     <input type="text" id="city" name="user_city">
 
-                    <label for="state">State</label>
-                    <select id="state" name="user_state">
-                        <option>Choose State</option>
+                    <label for="state" class="wrap">State</label>
+                    <select id="state" name="user_state" class="dropdown" required>
+                        <option value="" selected disabled hidden>Choose State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -101,35 +104,36 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="newsletter-fieldset">
                     <legend>Newsletter</legend>
 
-                    <label>Select the newsletter you would like to recieve</label><br>
+                    <label class="label-margin">Select the newsletter you would like to recieve</label>
                     <input type="checkbox" id="html-news" value="news_html" name="news">
-                    <label for="html-news">HTML News</label><br>
+                    <label class="light" for="html-news">HTML News</label><br>
 
                     <input type="checkbox" id="css-news" value="news_css" name="news">
-                    <label for="css-news">CSS News</label><br>
+                    <label class="light" for="css-news">CSS News</label><br>
 
                     <input type="checkbox" id="javascript-news" value="news_javascript" name="news">
-                    <label for="javascript-news">Javascript News</label><br>
+                    <label class="light" for="javascript-news">Javascript News</label>
 
-                    <label>Newsletter format</label><br>
+                    <label class="label-margin">Newsletter format</label>
                     <input type="radio" id="format-html" value="format_html" name="format">
-                    <label for="format-html">HTML</label><br>
+                    <label class="light" for="format-html">HTML</label><br>
 
                     <input type="radio" id="format-plain" value="format_plain" name="format">
-                    <label for="format-plain">Plain text</label><br>
+                    <label class="light" for="format-plain">Plain text</label>
 
-                    <label for="txt">Other topics you'd like to hear about</label>
+                    <label class="label-margin" for="txt">Other topics you'd like to hear about</label>
                     <textarea id="txt" name="user_txt"></textarea>
                 </fieldset>
 
                 <button type="submit">Sign Up</button>
+                <p class="copyright">Copyright The Code Review</p>
             </form>
-            <p class="">Copyright The Code Review</p>
         </section>
     </main>
+
 </body>
 
 </html>

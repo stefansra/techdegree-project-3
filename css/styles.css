@@ -1,0 +1,204 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+/* ---- Form ---- */
+
+form {
+    margin: 5px 20px;
+    padding: 30px 0px;
+    border-top: 2px solid #000;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    background: rgba(255,255,255, 0.1);
+    border: none;
+    height: 55px;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #eff0f1;
+    color: #000;
+    box-shadow: 0 1px 0 rgba(0,0,0,.03) inset;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+input[id="zip-code"] {
+    width: 50%;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+fieldset:first-child {
+    border-bottom: 2px solid #000;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #929ea9;
+    font-size: 0.9em;
+}
+
+label.light {
+    display: inline;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 10px 0;
+}
+
+.label-margin {
+    margin-top: 15px;
+}
+
+textarea {
+    height: 100px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    background-color: #51BAB5;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #51BAB5;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+}
+
+.newsletter-fieldset {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 300;
+    padding-right: 8px;
+    color: #ced1d4;
+}
+ 
+:-moz-placeholder { 
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 300;
+    padding-right: 8px;
+    color: #ced1d4;
+}
+ 
+::-moz-placeholder { 
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 300;
+    padding-right: 8px;
+    color: #ced1d4;
+}
+ 
+:-ms-input-placeholder {  
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 300;
+    padding-right: 8px;
+    color: #ced1d4;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header {
+    background: #2D3944;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+    margin: auto;
+    text-align: center;
+    margin: 0 20px;
+    padding-bottom: 30px;
+    border-bottom: solid 4px #000;
+}
+
+.copyright {
+    margin: auto;
+    text-align: center;
+    margin: 20px 20px;
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #ced1d4;
+}
+
+/* ---- Page Elements ---- */
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    .contact-fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
