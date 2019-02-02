@@ -50,7 +50,7 @@ select {
 }
 
 input[id="zip-code"] {
-    width: 50%;
+    width: 30%;
 }
 
 fieldset {
@@ -173,7 +173,7 @@ button {
 .banner {
     margin: auto;
     text-align: center;
-    margin: 0 20px;
+    margin: 0px 20px;
     padding-bottom: 30px;
     border-bottom: solid 4px #000;
 }
@@ -188,17 +188,39 @@ button {
     color: #ced1d4;
 }
 
+.wrap-signup {
+    display: flex;
+    flex-direction: column;
+}
+
 /* ---- Page Elements ---- */
 
+.banner-heading {
+    margin-top: 50px;
+}
 
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 768px) {
-    .contact-fieldset {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    main {
+        width: 60%;
+        margin: auto;
+    }
+
+    .wrap-signup {
+        flex-direction: row;
+    }
+
+    .wrap-signup label {
+        min-width: 10em;
+        height: 25px;
+        margin: 0;
+        padding: 15px;
+    }
+
+    #zip-code {
+        
     }
 }
